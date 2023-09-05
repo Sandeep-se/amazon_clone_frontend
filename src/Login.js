@@ -14,7 +14,7 @@ function Login() {
      const signIn=async(e)=>
     {
         e.preventDefault()
-        const response=await axios.post('https://amazon-clone-backend-x7dm.onrender.com/signIn',{email,password},{withCredentials:true},{"Content-Type":"application/json"})
+        const response=await axios.post('https://amazon-clone-backend-x7dm.onrender.com/signIn',{email,password},{withCredentials:true})
         try{
             if(response.data==='sigIn success')
             {
