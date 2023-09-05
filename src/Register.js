@@ -12,7 +12,7 @@ function Register() {
     const signUp=async(e)=>
     {
         e.preventDefault()
-        const response=await axios.post('http://localhost:8000/signUp',{email,password})
+        const response=await axios.post('https://amazon-clone-backend-x7dm.onrender.com/signUp',{email,password})
         try{
             if(response.data==='`@gmail.com` is missing ')
             {

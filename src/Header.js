@@ -14,7 +14,7 @@ function Header() {
     const length=details.basket?Object.keys(details.basket).length:0
     const logout = async () => {
         try {
-          const response = await axios.post('http://localhost:8000/logout', null, { withCredentials: true });
+          const response = await axios.post('https://amazon-clone-backend-x7dm.onrender.com/logout', null, { withCredentials: true });
           if (response.data === 'logout success') {
             window.location.reload();
           }

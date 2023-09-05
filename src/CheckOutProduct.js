@@ -7,7 +7,7 @@ function CheckOutProduct({id,title,price,rating}) {
     const removeFromBasket=async()=>
       {
         try{
-          const response=await axios.delete(`http://localhost:8000/del/${id}`,{withCredentials:true})
+          const response=await axios.delete(`https://amazon-clone-backend-x7dm.onrender.com/del/${id}`,{withCredentials:true})
         }
         catch(err)
         {

@@ -8,7 +8,7 @@ function Product({id,title,price,rating,image}) {
   const navigate=useNavigate()
   const addToBasket = async() => {
     try{
-      const basket=await axios.post('http://localhost:8000/add',{id,title,price,rating,image},{withCredentials:true})
+      const basket=await axios.post('https://amazon-clone-backend-x7dm.onrender.com/add',{id,title,price,rating,image},{withCredentials:true})
       if(basket.data==='unauthorized')
       {
         navigate('/login')
