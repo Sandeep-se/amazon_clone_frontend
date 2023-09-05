@@ -18,7 +18,6 @@ function App() {
   const getData=async()=>
   {
     const response=await axios.get('http://localhost:8000/get',{withCredentials:true})
-    console.log(response)
   }
   const itemAdd = (data) => {
     setDetails(data);

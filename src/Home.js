@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './Home.css'
 import Product from './Product'
 import phone from './phone.jpeg'
@@ -8,7 +8,7 @@ import headset from './headset.jpeg'
 import speaker from './speaker.webp'
 import tv from './tv.jpeg'
 import homeLogo from './home.jpg'
-import axios from 'axios'
+
 
 function Home() {
   return (
