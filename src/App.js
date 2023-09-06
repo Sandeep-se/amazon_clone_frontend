@@ -18,7 +18,6 @@ function App() {
   const getData=async()=>
   {
     const response=await axios.get('https://amazon-clone-backend-x7dm.onrender.com/get',{withCredentials:true})
-    console.log('hi')
   }
   const itemAdd = (data) => {
     setDetails(data);
@@ -26,6 +25,7 @@ function App() {
   const user=(data)=>
   {
     setDetails(data);
+    console.log(data)
   }
   const removeItem=(data)=>
   {
