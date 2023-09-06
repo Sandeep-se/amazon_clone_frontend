@@ -27,7 +27,6 @@ function App() {
   const user=(data)=>
   {
     setDetails(data);
-    console.log(data)
   }
   const removeItem=(data)=>
   {
@@ -35,13 +34,10 @@ function App() {
   }
   useEffect(()=>
   {
-      getData()
-  })
-  useEffect(()=>
-  {
     socket.on('user',user)
     socket.on('itemAdd',itemAdd);
     socket.on('removeItem',removeItem)
+    getData()
     return () => {
       socket.off('removeItem',removeItem)
       socket.off('user',itemAdd);
