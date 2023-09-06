@@ -17,7 +17,9 @@ function App() {
   const {details,setDetails}=useBasketValue();
   const getData=async()=>
   {
-    const response=await axios.get('https://amazon-clone-backend-x7dm.onrender.com/get',{withCredentials:true})
+    const response=await axios.get('https://amazon-clone-backend-x7dm.onrender.com/get',{withCredentials:true},{headers:{
+      'Content-Type':'application/json',
+    }})
   }
   const itemAdd = (data) => {
     setDetails(data);
