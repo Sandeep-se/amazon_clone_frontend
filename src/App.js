@@ -33,7 +33,10 @@ function App() {
   }
   useEffect(()=>
   {
-    getData()
+      getData()
+  },[])
+  useEffect(()=>
+  {
     socket.on('user',user)
     socket.on('itemAdd',itemAdd);
     socket.on('removeItem',removeItem)
