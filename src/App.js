@@ -36,7 +36,7 @@ function App() {
   useEffect(()=>
   {
       getData()
-  },[])
+  })
   useEffect(()=>
   {
     socket.on('user',user)
